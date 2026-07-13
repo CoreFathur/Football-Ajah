@@ -20,3 +20,13 @@ export interface AIProvider {
   /** Optional: validate provider health / quota. */
   healthCheck?(): Promise<boolean>
 }
+
+// Export Gemini provider implementations
+export * from './GeminiProvider'
+export * from './GeminiMapper'
+export * from './GeminiError'
+export * from './GeminiConfig'
+export * from './GeminiResponseParser'
+export * from './GeminiRetry'
+export * from './GeminiRateLimiter'
+export * from './GeminiHealth'

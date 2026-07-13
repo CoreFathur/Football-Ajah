@@ -1,5 +1,7 @@
 import { Match, Competition, Team } from '@/types'
 import { MatchContext } from '@/context'
+import { FootballDataProvider } from './FootballDataProvider'
+import { FOOTBALL_DATA_BASE_URL, FOOTBALL_DATA_API_KEY } from './FootballConfig'
 
 export interface FootballProvider {
   /** Fetch a list of matches. Accept provider-specific filters in the options. */
@@ -48,6 +50,3 @@ export interface FootballProvider {
 // Export FootballData provider implementations
 export { FootballDataProvider }
 export { FOOTBALL_DATA_BASE_URL, FOOTBALL_DATA_API_KEY }
-
-import { FootballDataProvider } from './FootballDataProvider'
-import { FOOTBALL_DATA_BASE_URL, FOOTBALL_DATA_API_KEY } from './FootballConfig'

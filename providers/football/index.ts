@@ -44,3 +44,10 @@ export interface FootballProvider {
   /** Optionally return a normalized MatchContext directly if the provider supports it. */
   fetchMatchContext?(matchId: string): Promise<MatchContext | null>
 }
+
+// Export FootballData provider implementations
+export { FootballDataProvider }
+export { FOOTBALL_DATA_BASE_URL, FOOTBALL_DATA_API_KEY }
+
+import { FootballDataProvider } from './FootballDataProvider'
+import { FOOTBALL_DATA_BASE_URL, FOOTBALL_DATA_API_KEY } from './FootballConfig'
